@@ -28,7 +28,6 @@ window.onload = () => {
 			scrollToReadingBox();
 			countDownBeforeStart(displayingWord).then((done) => {
 				interval = play(textToRead, displayingWord, lastReadIndex);
-                console.log(interval);
 
 				readerContainer.addEventListener('click', () => {
 					if (interval) {
